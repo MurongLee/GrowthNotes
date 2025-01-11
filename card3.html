@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* 之前的样式保持不变 */
+        body {
+            background-color: #e8e6e8;
+            background: linear-gradient(135deg, #e8e6e8 0%, #d4ccd1 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            font-family: "Microsoft YaHei", sans-serif;
+            gap: 30px;
+        }
+
+        .container {
+            position: relative;
+            padding: 20px;
+            width: 400px;
+        }
+
+        .container::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            background: linear-gradient(135deg, #f0e9ec 0%, #e8e1e4 100%);
+            border-radius: 35px;
+            z-index: -1;
+        }
+
+        .card {
+            background: white;
+            width: 400px;
+            border-radius: 30px;
+            padding: 40px 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            position: relative;
+            background: linear-gradient(145deg, #ffffff, #f7f5f6);
+            box-sizing: border-box;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .book-icon {
+            width: 30px;
+            height: 30px;
+            background: #e8e1e4;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .title {
+            font-size: 18px;
+            color: #8b7f87;
+        }
+
+        .page-number {
+            position: absolute;
+            top: 40px;
+            right: 30px;
+            background: #e8e1e4;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .divider {
+            height: 1px;
+            background: linear-gradient(to right, #e8e1e4, #d5ccd0, #e8e1e4);
+            margin: 0 -30px 30px;
+        }
+
+        .poem-title {
+            font-size: 20px;
+            color: #6b5f69;
+            margin-bottom: 25px;
+            padding: 0 10px;
+        }
+
+        .content {
+            font-size: 16px;
+            line-height: 2.2;
+            color: #444;
+            margin-bottom: 40px;
+            white-space: pre-line;
+            background: linear-gradient(to bottom right, rgba(247,245,246,0.5), rgba(232,225,228,0.3));
+            border-radius: 15px;
+            padding: 20px;
+        }
+
+        .author {
+            color: #666;
+            font-size: 14px;
+            text-align: left;
+            padding-left: 10px;
+        }
+
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23f0f0f0' fill-opacity='0.3' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+            border-radius: 30px;
+            opacity: 0.3;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <!-- 第1页 -->
+    <div class="container">
+        <div class="card">
+            <div class="page-number">1/6</div>
+            <div class="header">
+                <div class="book-icon">📖</div>
+                <div class="title">心理成长笔记</div>
+            </div>
+            <div class="divider"></div>
+            <div class="poem-title">反观自照</div>
+            <div class="content">我看见你的冷漠
+却想去温暖这个冷漠
+我看到
+其实我还没接纳你的冷漠
+
+我看见你的痛苦
+却想去结束这个痛苦
+我看到
+其实我还没有陪伴你的痛苦
+
+我看见你的自私
+却去评判你的自私
+其实真正涌动的是我的自私</div>
+            <div class="author">佚名</div>
+        </div>
+    </div>
+
+    <!-- 第2页 -->
+    <div class="container">
+        <div class="card">
+            <div class="page-number">2/6</div>
+            <div class="header">
+                <div class="book-icon">📖</div>
+                <div class="title">心理成长笔记</div>
+            </div>
+            <div class="divider"></div>
+            <div class="poem-title">反观自照</div>
+            <div class="content">我看见你的愤怒
+却想躲开你的愤怒
+我看到
+其实我没有允许你可以愤怒
+
+我看见你的焦虑
+却去担心你的焦虑
+我看到
+其实我已开始陷入焦虑
+
+我看见你的无力
+却不知道要伸哪只手来抱你
+我看到
+当下我也无力</div>
+            <div class="author">佚名</div>
+        </div>
+    </div>
+
+    <!-- 第3页 -->
+    <div class="container">
+        <div class="card">
+            <div class="page-number">3/6</div>
+            <div class="header">
+                <div class="book-icon">📖</div>
+                <div class="title">心理成长笔记</div>
+            </div>
+            <div class="divider"></div>
+            <div class="poem-title">反观自照</div>
+            <div class="content">我看见你的美丽
+并欣赏着你的美丽
+我看到
+当下我也开始美丽
+
+我看见你的善良
+并喜悦着你的善良
+我看到
+原本我亦善良
+
+我看见你真实
+并相信着你的真实
+我看到
+原本我也如此真实</div>
+            <div class="author">佚名</div>
+        </div>
+    </div>
+
+    <!-- 第4页 -->
+    <div class="container">
+        <div class="card">
+            <div class="page-number">4/6</div>
+            <div class="header">
+                <div class="book-icon">📖</div>
+                <div class="title">心理成长笔记</div>
+            </div>
+            <div class="divider"></div>
+            <div class="poem-title">反观自照</div>
+            <div class="content">我看见你的坚定
+并看到相守的温柔
+我看到
+我正坚定并且温柔
+
+我看见你的坚强
+并感受着坚韧的力量
+我看到
+我正承接到这样的力量
+
+我看见你的谦卑
+并感受内在的自信
+我看到
+我也开始低头谦卑</div>
+            <div class="author">佚名</div>
+        </div>
+    </div>
+
+    <!-- 第5页 -->
+    <div class="container">
+        <div class="card">
+            <div class="page-number">5/6</div>
+            <div class="header">
+                <div class="book-icon">📖</div>
+                <div class="title">心理成长笔记</div>
+            </div>
+            <div class="divider"></div>
+            <div class="poem-title">反观自照</div>
+            <div class="content">我看见你的淡定
+并感受到平静的慈悲
+我看到
+我正在走进慈悲
+
+我看见你的敞开
+并拥抱你的敞开
+我看到
+其实我也正在敞开
+
+我看见你的付出
+不带任何条件
+我看到
+其实我也学会将自己分享</div>
+            <div class="author">佚名</div>
+        </div>
+    </div>
+
+    <!-- 第6页 -->
+    <div class="container">
+        <div class="card">
+            <div class="page-number">6/6</div>
+            <div class="header">
+                <div class="book-icon">📖</div>
+                <div class="title">心理成长笔记</div>
+            </div>
+            <div class="divider"></div>
+            <div class="poem-title">反观自照</div>
+            <div class="content">我看见你的纯粹
+只是
+做自己想做的事
+爱自己想爱的人
+走自己想走的路
+
+痛了就哭，喜了就笑
+累了就歇，好了就走
+
+我也看到了自己
+
+如果对于看见
+只是看见
+并接纳所有的看见
+并不想要马上去改变
+
+透过看见
+我看见了自己
+也看到
+生命原本的纯粹和全然</div>
+            <div class="author">佚名</div>
+        </div>
+    </div>
+</body>
+</html>
