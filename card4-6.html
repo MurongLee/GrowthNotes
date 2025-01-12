@@ -1,0 +1,171 @@
+
+
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>心理成长笔记</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500&display=swap');
+
+        body {
+            margin: 0;
+            padding: 15px;
+            background: #f5f5f5;
+            font-family: system-ui, -apple-system, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 340px;
+            aspect-ratio: 9/16;
+            background: linear-gradient(135deg, #E8D7DE, #D7E3EC, #E6E4D7);
+            border-radius: 20px;
+            padding: 30px 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+
+        .content-area {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 25px;
+            margin: -10px;
+            backdrop-filter: blur(10px);
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            box-shadow: inset 0 0 20px rgba(227,215,236,0.5);
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #D7E3EC;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #B4D6E9, #E8D7DE);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        .brand {
+            font-size: 16px;
+            color: #6A8BA4;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .page-number {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #A389A7;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 13px;
+            opacity: 0.9;
+        }
+
+        .poem-title {
+            color: #A389A7;
+            font-size: 15px;
+            font-weight: 500;
+            margin: 15px 0;
+            text-align: left;
+            padding-left: 10px;
+        }
+
+        .quote-content {
+            text-align: left;
+            padding: 0 10px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .chinese {
+            font-size: 15px;
+            color: #6A8BA4;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-family: 'Noto Serif SC', FangSong, STFangsong, 'fangsong', serif;
+            font-weight: 500;
+        }
+
+        .author {
+            font-size: 14px;
+            color: #A389A7;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .poem-text {
+            text-indent: -1em;
+            padding-left: 1em;
+            margin: 5px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="content-area">
+            <div class="page-number">1/6</div>
+            <div class="header">
+                <div class="header-left">
+                    <div class="avatar">
+                        📖
+                    </div>
+                    <div class="brand">心理成长笔记</div>
+                </div>
+            </div>
+            
+            <div class="poem-title">当我真的有爱时</div>
+            
+            <div class="quote-container">
+                <div class="quote-content">
+                    <div class="chinese">
+                        <p class="poem-text">当我真的有爱时</p>
+                        <p class="poem-text">我将自己的人生剧本放在一边</p>
+                        <p class="poem-text">让演出告一段落</p>
+                        <p class="poem-text">无论好坏美丑</p>
+                        <p class="poem-text">我只做自己就是了</p>
+                        <p class="poem-text">我也愿意看到你的一切</p>
+                        <p class="poem-text">无论好与坏</p>
+                        <p class="poem-text">美丽还是丑陋</p>
+                    </div>
+                    <div class="author">
+                        Virginia Satir / 维吉尼亚·萨提亚
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
